@@ -86,8 +86,7 @@ tags for the given `treestr` object *and* the tags of all of its parents. This
 allows you to easily, e.g., get a list of authors whose work is included in
 your remixed string:
 
-    >>> parts = [t("it was the best of times, it was the worst of times",
-    >>> tags={'dickens'}),
+    >>> parts = [t("it was the best of times, it was the worst of times", tags={'dickens'}),
     ...     t("happy families are all alike", tags={'tolstoy'}),
     ...     t("once upon a time and a very good time it was", tags={'joyce'})]
     >>> first, second = sample(parts, 2)
@@ -121,7 +120,8 @@ Install from Github with `pip` like so:
 
     $ pip install git+https://github.com/aparrish/treestr#egg=treestr
 
-Not putting this on PyPI until it actually works.
+Not putting this on PyPI until I'm convinced it actually has utility for anyone
+other than me.
 
 ##Compatibility
 
