@@ -7,10 +7,11 @@ python:
 sudo: false
 
 install:
- - pip install coverage
+ - pip install coverage nose
 
 script:
  - coverage run --source=treestr tests/test.py -v
+ - coverage run --include=treestr/* -m nose -vx
 
 after_success:
  - pip install coveralls
