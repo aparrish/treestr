@@ -10,7 +10,7 @@ install:
  - pip install coverage
 
 script:
- - coverage run --source=treestr ./test.py -v
+ - coverage run --source=treestr tests/test.py -v
 
 after_success:
  - pip install coveralls
