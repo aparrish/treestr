@@ -35,6 +35,7 @@ entirely new abstraction just to keep this metadata with the string.
 
 To solve this problem, I give you... the `treestr`.
 
+    >>> from treestr import treestr as t
     >>> parts = [t("it was the best of times, it was the worst of times"),
     ...     t("happy families are all alike"),
     ...     t("once upon a time and a very good time it was")]
