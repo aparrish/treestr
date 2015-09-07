@@ -1,0 +1,27 @@
+language: python
+
+python:
+ - 3.4
+ - 3.5-dev
+
+# Use container-based infrastructure
+sudo: false
+
+install:
+ - pip install coverage nose
+
+script:
+ - coverage run --include=treestr/* -m nose -vx
+
+after_success:
+ - pip install coveralls
+ - coveralls
+
+after_script:
+ - coverage report
+ - pip install pep8 pyflakes
+ - pep8 --statistics --count .
+ - pyflakes . | tee >(wc -l)
+
+matrix:
+  fast_finish: true
