@@ -5,7 +5,7 @@ An over-engineered solution to an unimportant problem, by [Allison
 Parrish](http://www.decontextualize.com/)
 
 This is really raw software and it's probably not suitable for use by anyone
-other than me. I just wanted it on Github so I can include it in
+other than me. I just wanted it on GitHub so I can include it in
 `pip` requirements files.
 
 ## Motivation and examples
@@ -131,7 +131,7 @@ once  times
 
 ## Installation
 
-Install from Github with `pip` like so:
+Install from GitHub with `pip` like so:
 
 ```bash
 $ pip install git+https://github.com/aparrish/treestr#egg=treestr
