@@ -8,7 +8,7 @@ This is really raw software and it's probably not suitable for use by anyone
 other than me. I just wanted it on Github so I can include it in
 `pip` requirements files.
 
-##Motivation and examples
+## Motivation and examples
 
 Say you start out with a series of strings, like:
 
@@ -22,7 +22,7 @@ something new and interesting:
     >>> from random import sample, randrange
     >>> first, second = sample(parts, 2)
     >>> result = first[:randrange(len(first))] + second[randrange(len(second)):]
-    >>> print(result) 
+    >>> print(result)
     once upon a time and the best of times, it was the worst of times
 
 The resulting string is amusing, but there's no way to tell *which* strings
@@ -66,7 +66,7 @@ operators implemented with special methods like `__add__`, `__getitem__` and
     >>> print(repl.parents)
     ('it was the best of times, it was the worst of times',)
 
-##Keeping track of tags
+## Keeping track of tags
 
 The `treestr` also allows you to keep track of metadata on a string through a
 mechanism called `tags`. The `tags` attribute on a `treestr` is a Python
@@ -100,7 +100,7 @@ your remixed string:
 Easy peasy, and if you're just using regular string methods, you don't have to
 change any of your code!
 
-##The strange case of `.join()`
+## The strange case of `.join()`
 
 You can mix and match regular `str` objects with `treestr` objects, no problem.
 But be aware of `.join()`: if you want it to work properly, you need to call
@@ -115,7 +115,7 @@ regular `str`):
     >>> print(result)
     once  times
 
-##Installation
+## Installation
 
 Install from Github with `pip` like so:
 
@@ -124,12 +124,12 @@ Install from Github with `pip` like so:
 Not putting this on PyPI until I'm convinced it actually has utility for anyone
 other than me.
 
-##Compatibility
+## Compatibility
 
 Only tested with Python 3.4. (There's some stuff in Python 3.4 that makes it
 easier to subtype `str` and I'm too lazy to backport everything.)
 
-##License
+## License
 
 Copyright (c) 2015, Allison Parrish
 All rights reserved.
